@@ -1,148 +1,118 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akira Tominaga</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --ink: #1c2a3a;
-            --muted: #5f6b7a;
-            --accent: #0f3d5e;
-            --paper: #ffffff;
-            --wash: #f6f4f1;
-            --line: #e6e1db;
-        }
-        * {
-            box-sizing: border-box;
-        }
         body {
-            font-family: "Source Sans 3", "Segoe UI", sans-serif;
-            line-height: 1.75;
+            font-family: Georgia, "Times New Roman", "Hiragino Mincho ProN", serif;
+            color: #1a1a1a;
+            background: #fdfdfb;
             margin: 0;
-            padding: 0;
-            background: radial-gradient(1200px 600px at 20% -10%, #eef2f3 0%, transparent 60%),
-                        radial-gradient(1200px 600px at 90% 0%, #f5efe7 0%, transparent 55%),
-                        var(--wash);
-            color: var(--ink);
+            line-height: 1.7;
         }
-        header {
-            padding: 56px 20px 32px;
-            text-align: center;
-            border-bottom: 1px solid var(--line);
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(6px);
+        .page {
+            max-width: 660px;
+            margin: 0 auto;
+            padding: 56px 24px 80px;
         }
         h1 {
-            margin: 0;
-            font-family: "Fraunces", "Times New Roman", serif;
-            font-size: clamp(2.2rem, 3vw, 2.8rem);
-            letter-spacing: 0.4px;
+            font-size: 1.7rem;
+            font-weight: normal;
+            margin: 0 0 4px;
+            letter-spacing: 0.02em;
         }
-        .subtitle {
-            margin-top: 6px;
-            color: var(--muted);
-            font-weight: 300;
-        }
-        main {
-            padding: 32px 20px 64px;
-            max-width: 920px;
-            margin: 0 auto;
-        }
-        section {
-            margin-bottom: 36px;
-            background: var(--paper);
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            padding: 28px;
-            box-shadow: 0 10px 24px rgba(31, 45, 58, 0.06);
+        .affiliation {
+            color: #555;
+            margin: 0 0 36px;
+            font-size: 1rem;
         }
         h2 {
-            margin: 0 0 16px;
-            font-family: "Fraunces", "Times New Roman", serif;
-            font-size: 1.4rem;
-            color: var(--accent);
-            display: inline-block;
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 6px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            margin: 40px 0 12px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ddd;
+        }
+        p {
+            margin: 0 0 12px;
         }
         ul {
-            list-style-type: none;
-            padding-left: 0;
+            list-style: none;
+            padding: 0;
             margin: 0;
         }
         li {
             margin-bottom: 14px;
-            color: var(--ink);
+        }
+        .detail {
+            color: #555;
+            font-size: 0.92rem;
         }
         a {
-            color: var(--accent);
+            color: #1a4a7a;
             text-decoration: none;
-            border-bottom: 1px solid rgba(15, 61, 94, 0.3);
-            transition: border-color 160ms ease, color 160ms ease;
         }
         a:hover {
-            color: #0b2f47;
-            border-color: rgba(11, 47, 71, 0.7);
-        }
-        .meta {
-            color: var(--muted);
-            font-size: 0.95rem;
+            text-decoration: underline;
         }
         footer {
-            text-align: center;
-            padding: 24px 16px 40px;
-            font-size: 0.9rem;
-            color: var(--muted);
-        }
-        @media (max-width: 640px) {
-            header {
-                padding-top: 40px;
-            }
-            section {
-                padding: 22px;
-            }
+            margin-top: 56px;
+            padding-top: 12px;
+            border-top: 1px solid #ddd;
+            color: #888;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Akira Tominaga</h1>
-        <div class="subtitle">Homotopy theory, Johns Hopkins University</div>
-    </header>
-    <main>
-        <section id="about">
-            <h2>Profile</h2>
-            <p>I am a 6-th year PhD student at Johns Hopkins University. My advisor is David Gepner. I work in homotopy theory.</p>
-        </section>
-        <section id="Papers">
-            <h2>Papers</h2>
-            <ul>
-                <li><strong>Verlinde bundles and stragne duality in equivariant topological modular forms</strong> – with Langwen Hui and Dan Berwice-Evans, in preparation.</li>
-                <li><strong><a href="https://arxiv.org/abs/2510.23602" target="_blank">RO(C_n)-graded equivarant TMF</a></strong> – with Mayuko Yamashita and Ying-Hsuan Lin.</li>
-                <li><strong><a href="https://arxiv.org/abs/2602.01584" target="_blank">Computation of Topological Jacobi Forms </a> </strong>  – PhD thesis.</li>
-                <!-- ここに追加の論文をリストできます -->
-            </ul>
-        </section>
-        <section id="Notes">
-            <h2>Expository notes</h2>
-            <p class="meta">All errors and typos are due to myself.</p>
-            <ul>
-                <li><strong><a href="notes/Notes_ImJ.pdf" target="_blank"> A note on J-homomorphism</strong> </a></li>
-                <li><strong><a href="notes/Quillen.pdf" target="_blank">On Quillen's theorem</strong> </a></li>
-                <li><strong><a href="notes/Steenrod_eng.pdf" target="_blank">Adem relations</strong> </a></li>
-            </ul>
-        </section>
-        <section id="CV">
-            <h2>CV</h2>
-            <p><a href="misc_docs/TominagaAkira_CV.pdf" target="_blank">My CV</a></p>
-        </section>
-    </main>
-    <footer>
-        <div>Last updated: 2024</div>
-    </footer>
+    <div class="page">
+        <header>
+            <h1>Akira Tominaga</h1>
+            <p class="affiliation">Department of Mathematics, Johns Hopkins University</p>
+        </header>
+
+        <main>
+            <section id="about">
+                <p>I am a sixth-year PhD student at Johns Hopkins University, advised by David Gepner. I work in homotopy theory, with a focus on equivariant elliptic cohomology and topological modular forms.</p>
+                <p><a href="misc_docs/TominagaAkira_CV.pdf" target="_blank">Curriculum vitae (PDF)</a></p>
+            </section>
+
+            <section id="papers">
+                <h2>Papers and preprints</h2>
+                <ul>
+                    <li>
+                        Verlinde bundles and strange duality in equivariant topological modular forms
+                        <div class="detail">with Langwen Hui and Dan Berwick-Evans. In preparation.</div>
+                    </li>
+                    <li>
+                        <a href="https://arxiv.org/abs/2510.23602" target="_blank">RO(C<sub>n</sub>)-graded equivariant TMF</a>
+                        <div class="detail">with Mayuko Yamashita and Ying-Hsuan Lin.</div>
+                    </li>
+                    <li>
+                        <a href="https://arxiv.org/abs/2602.01584" target="_blank">Computation of topological Jacobi forms</a>
+                        <div class="detail">PhD thesis.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="notes">
+                <h2>Expository notes</h2>
+                <p class="detail">All errors and typos are my own.</p>
+                <ul>
+                    <li><a href="notes/Notes_ImJ.pdf" target="_blank">A note on the J-homomorphism</a></li>
+                    <li><a href="notes/Quillen.pdf" target="_blank">On Quillen's theorem</a></li>
+                    <li><a href="notes/Steenrod_eng.pdf" target="_blank">Adem relations</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            Last updated: July 2026
+        </footer>
+    </div>
 </body>
 </html>
